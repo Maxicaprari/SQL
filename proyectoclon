@@ -342,6 +342,7 @@ WHERE finish_date IS NOT NULL AND finish_date <> '';
  -- # Valores en blanco a nulos
 UPDATE limpieza SET finish_date = NULL WHERE finish_date = '';
 
+--gf
 -- # Actualizar la propiedad
 ALTER TABLE limpieza MODIFY COLUMN finish_date DATETIME;
 
